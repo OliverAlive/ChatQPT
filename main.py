@@ -1,7 +1,7 @@
 import streamlit as st
 from langchain.memory import  ConversationBufferMemory
 from GPT_cloned import get_chat_response
-st.title("QPt")
+st.title("QPT")
 with st.sidebar:
     openai_api_key = st.text_input("请输入API密钥：", type="password")
 if "memory" not in st.session_state:
